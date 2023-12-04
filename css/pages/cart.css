@@ -1,0 +1,192 @@
+.cart-page {
+  margin: 60px 0;
+}
+.cart-page .cart-page-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.cart-page .cart-page-wrapper .cart-form {
+  flex-basis: 60%;
+}
+/*progress start*/
+.cart-page .cart-form .free-progress-bar {
+  padding: 20px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 10px;
+}
+.cart-page-wrapper .free-progress-bar .progress-bar-title {
+  font-size: 12px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+.cart-page-wrapper .progress-bar-title strong {
+  color: #ee403d;
+}
+
+.cart-page .progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #f2f3f5;
+  border-radius: 10px;
+}
+.cart-page .progress {
+  width: 50%;
+  height: 100%;
+  display: block;
+  background-color: red;
+  border-radius: 10px;
+}
+/*progress end*/
+
+/*table start*/
+.shop-table-wrapper {
+  margin-top: 50px;
+  overflow-x: auto;
+}
+
+.shop-table-wrapper .cart-image img {
+  width: 60px;
+}
+.shop-table-wrapper .cart-image {
+  position: relative;
+  display: flex;
+}
+.shop-table-wrapper .cart-image i {
+  position: absolute;
+  top: 2px;
+  left: -6px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  font-size: 13px;
+  display: grid;
+  place-items: center;
+  color: white;
+  padding: 0 2px;
+  background-color: red;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.cart-form table > :not(caption) > * > * {
+  padding: 8px 0;
+}
+.cart-wrapper {
+  border-top: 1px solid #dee0ea;
+}
+.cart-form table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 595px;
+}
+.cart-form table thead th {
+  text-align: start;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cart-form table .cart-item {
+  border-bottom: 1px solid #dee0ea;
+}
+.cart-form table .product-quantity,
+.cart-form table .product-subtotal {
+  text-align: center;
+}
+
+/*table end*/
+
+/*action  start*/
+.actions-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.coupon {
+  display: flex;
+  gap: 10px;
+}
+/*action end*/
+
+/*collaterals start*/
+
+.cart-collaterals {
+  flex: 0 0 300px;
+  border: 1px solid #dee0ea;
+  padding: 30px;
+}
+.cart-collaterals table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-collaterals .cart-totals h2 {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dee0ea;
+}
+
+.cart-collaterals table * {
+  font-size: 14px;
+  font-weight: 400;
+}
+.cart-collaterals table tr:not(:last-child) {
+  border-bottom: 1px solid #dee0ea;
+}
+.cart-collaterals table tr th {
+  text-align: start;
+  padding: 20px 0 10px 0;
+}
+.cart-collaterals table tr td {
+  text-align: end;
+  padding: 20px 0 10px 0;
+}
+.cart-collaterals table ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.cart-collaterals table ul label {
+  display: flex;
+  justify-content: end;
+  column-gap: 5px;
+}
+.cart-collaterals table ul li a {
+  color: #ee403d;
+  font-weight: 500;
+}
+.cart-collaterals table strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+.cart-collaterals table strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+.cart-collaterals button {
+  margin-top: 30px;
+  width: 100%;
+}
+/*collaterals end*/
+
+/*responsive start*/
+@media (max-width: 992px) {
+  .cart-page .cart-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media (max-width: ) {
+  .cart-page .cart-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+/*responsive end*/

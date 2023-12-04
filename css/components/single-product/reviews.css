@@ -1,0 +1,117 @@
+/*comments start*/
+
+.tab-panel-reviews h3 {
+  margin-bottom: 10px;
+}
+.tab-panel-reviews .comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.tab-panel-reviews .comment-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.comment-avatar img {
+  border-radius: 50%;
+  display: flex;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.comment-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tab-panel-reviews .comment-item .comment-stars {
+  display: flex;
+  color: gold;
+  column-gap: 2px;
+  font-size: 12px;
+}
+.comment-meta {
+  font-size: 12px;
+}
+.comment-desc p {
+  font-size: 14px;
+}
+/*comments end*/
+/*comment-form start*/
+.review-form-wrapper {
+  margin-top: 20px;
+}
+.review-form-wrapper .required {
+  color: #ee403d;
+  font-weight: 600;
+}
+.review-form-wrapper h2 {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 0;
+  border-bottom: 1px solid #dee0ea;
+}
+.review-form-wrapper .comment-form {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.comment-form-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.comment-form-rating .stars {
+  display: flex;
+  gap: 10px;
+}
+.stars .star.active {
+  color: gold;
+}
+.comment-form-rating .stars a {
+  border-right: 1px solid #dee0ea;
+  padding: 4px 10px;
+  color: #dee0ea;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab-panel-reviews .comment-form-rating .stars a:first-child {
+  padding-left: 0;
+}
+.comment-form-rating .stars a:last-child {
+  border-right: unset;
+}
+
+.comment-form-rating .stars a i {
+  font-size: 10px;
+  transition: 0.2s ease color;
+  pointer-events: none;
+}
+.comment-form-rating .stars a:hover i {
+  color: gold;
+}
+
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.comment-form .comment-form-cookies {
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.form-submit input.submit {
+  cursor: pointer;
+}
+/*comment-form end*/

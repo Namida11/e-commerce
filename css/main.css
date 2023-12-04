@@ -1,0 +1,28 @@
+@import url(/css/base.css);
+@import url(/css/layout/header.css);
+
+@import url(/css/components/modal-search.css);
+@import url(/css/components/slider.css);
+@import url(/css/pages/home.css);
+@import url(/css/components/category-item.css);
+@import url(/css/components/products-item.css);
+@import url(/css/components/campaigns-item.css);
+@import url(/css/components/blogs-item.css);
+@import url(/css/components/brands-item.css);
+@import url(/css/components/campaign-single-item.css);
+@import url(/css/components/policy-item.css);
+@import url(/css/components/footer-item.css);
+@import url(/css/components/single-product/breadcrumb.css);
+@import url(/css/components/single-product/product-gallery.css);
+@import url(/css/components/single-product/product-info.css);
+@import url(/css/components/single-product/product-tabs.css);
+@import url(/css/components/single-product/reviews.css);
+@import url(/css/components/glide.css);
+@import url(/css/components/modal-dialog.css);
+
+@import url(/css/pages/blog.css);
+@import url(/css/pages/contact.css);
+@import url(/css/pages/account.css);
+@import url(/css/pages/cart.css);
+@import url(/css/pages/single-product.css);
+@import url(/css/pages/single-blog.css);

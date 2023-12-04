@@ -1,0 +1,74 @@
+.contact .contact-bottom {
+  margin-top: 30px;
+}
+.contact-bottom .contact-titles {
+  width: 75%;
+}
+.contact-bottom .contact-titles h4 {
+  color: red;
+  font-weight: 500;
+}
+.contact-bottom .contact-titles h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.contact-bottom .contact-titles p {
+  font-size: 14px;
+}
+.contact-elements {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 10px);
+  font-size: 14px;
+  row-gap: 4px;
+}
+.contact-form div label span {
+  color: red;
+}
+.contact-form div:nth-child(3),
+.contact-form div:nth-child(4) {
+  flex-basis: 100%;
+}
+.contact-form button {
+  background-color: black;
+  color: white;
+}
+.contact-elements .contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 50%;
+  font-size: 14px;
+}
+.contact-info-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .contact .contact-titles {
+    width: 100%;
+  }
+
+  .contact-elements {
+    flex-direction: column;
+    gap: 50px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form {
+    flex-direction: column;
+  }
+}
