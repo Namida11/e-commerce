@@ -100,14 +100,12 @@ function productsFunc(products) {
   productRoute();
 }
 
-const func= ()=>{
-  console.log("clicked")
-}
-  const button = document.getElementById("fav");
-  console.log(button)
-  
- button.addEventListener("click",func)
+const func = () => {
+  console.log("clicked");
+};
+const button = document.getElementById("fav");
+console.log(button);
 
-
+button.addEventListener("click", func);
 
 export default productsFunc;

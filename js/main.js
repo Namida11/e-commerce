@@ -20,5 +20,3 @@ cartItems.innerHTML = localStorage.getItem("cart")
   ? JSON.parse(localStorage.getItem("cart")).length
   : "0";
 //! add cartItems to localStorage end
-
-
