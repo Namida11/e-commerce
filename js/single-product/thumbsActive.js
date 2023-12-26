@@ -1,16 +1,13 @@
- export function thumbActiveFunc(){
-  const thumbs =document.querySelectorAll(".product-thumb .glide__slide img")
-  const singleImage =document.querySelector(".single-image-wrapper img")
-
-    thumbs.forEach((thumb)=>{
-        thumb.addEventListener("click", ()=>{
-       
-            thumbs.forEach((item)=>{
-                item.classList.remove("active")
-            })
-            singleImage.src=thumb.src
-            thumb.classList.add("active")
-        })
-    })
- }
- 
+export function thumbsActiveFunc() {
+  const thumbs = document.querySelectorAll(".gallery-thumbs .img-fluid");
+  const singleImage = document.querySelector("#single-image");
+  thumbs.forEach((item) => {
+    item.addEventListener("click", function () {
+      thumbs.forEach((image) => {
+        image.classList.remove("active");
+      });
+      singleImage.src = item.src;
+      item.classList.add("active");
+    });
+  });
+}

@@ -2,36 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <!--! Boostrap Icons CDN  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Account</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
-    <!--! Header start -->
+    <!--! header start  -->
     <header>
       <div class="global-notification">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          <a href="" class="">Shop now</a>
-        </p>
+        <div class="container">
+          <p>
+            SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL
+            DELIVERY - OFF 50%!
+            <a href="shop.html">SHOP NOW</a>
+          </p>
+        </div>
       </div>
       <div class="header-row">
         <div class="container">
           <div class="header-wrapper">
-            <button class="mobile-list-icon">
-              <i class="bi bi-list"></i>
-            </button>
-            <div class="header-left">
-              <a href="" class="logo">LOGO</a>
+            <div class="header-mobile">
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
-            <div class="header-center">
+            <div class="header-left">
+              <a href="index.html" class="logo">LOGO</a>
+            </div>
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
-                  <li class="menu-item">
+                  <li class="menu-list-item">
                     <a href="index.html" class="menu-link">
                       Home
                       <i class="bi bi-chevron-down"></i>
@@ -68,7 +74,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="menu-item megamenu-wrapper">
+                  <li class="menu-list-item megamenu-wrapper">
                     <a href="shop.html" class="menu-link">
                       Shop
                       <i class="bi bi-chevron-down"></i>
@@ -77,7 +83,7 @@
                       <div class="menu-dropdown-megamenu">
                         <div class="megamenu-links">
                           <div class="megamenu-products">
-                            <h4 class="megamenu-products-title">Shop Style</h4>
+                            <h3 class="megamenu-products-title">Shop Style</h3>
                             <ul class="megamenu-menu-list">
                               <li>
                                 <a href="#">Shop Standard</a>
@@ -153,14 +159,14 @@
                         </div>
                         <div class="megamenu-single">
                           <a href="#">
-                            <img src="/img/mega-menu.jpg" alt="" />
+                            <img src="img/mega-menu.jpg" alt="" />
                           </a>
                           <h3 class="megamenu-single-title">
                             JOIN THE LAYERING GANG
                           </h3>
-                          <p class="megamenu-single-subtitle">
+                          <h4 class="megamenu-single-subtitle">
                             Suspendisse faucibus nunc et pellentesque
-                          </p>
+                          </h4>
                           <a href="#" class="megamenu-single-button btn btn-sm"
                             >Shop Now</a
                           >
@@ -168,58 +174,62 @@
                       </div>
                     </div>
                   </li>
-                  <li class="menu-item">
+                  <li class="menu-list-item">
                     <a href="blog.html" class="menu-link"> Blog </a>
                   </li>
-                  <li class="menu-item">
+                  <li class="menu-list-item">
                     <a href="contact.html" class="menu-link"> Contact </a>
                   </li>
                 </ul>
               </nav>
-              <i class="bi bi-x-circle menu-close"></i>
+              <i class="bi-x-circle" id="close-sidebar"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
-                <a href="" class="header-account">
-                  <i class="bi bi-person active"></i>
+                <a href="account.html" class="header-account">
+                  <i class="bi bi-person"></i>
                 </a>
-                <button class="search-toggle">
+                <button class="search-button">
                   <i class="bi bi-search"></i>
                 </button>
-                <a href="" class="header-heart">
+                <a href="#">
                   <i class="bi bi-heart"></i>
                 </a>
-                <a href="" class="header-cart">
-                  <i class="bi bi-bag"></i>
-                  <span class="header-cart-count">0</span>
-                </a>
+                <div class="header-cart">
+                  <a href="cart.html" class="header-cart-link">
+                    <i class="bi bi-bag"></i>
+                    <span class="header-cart-count">0</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <!--! Header end -->
+    <!--! header end  -->
 
-    <!--! Modal Search Start-->
+    <!--! modal search start  -->
     <div class="modal-search">
       <div class="modal-wrapper">
         <h3 class="modal-title">Search for products</h3>
-        <p class="modal-subtitle">
+        <p class="modal-text">
           Start typing to see products you are looking for.
         </p>
-        <form action="" class="search-form">
-          <input type="text" />
+        <form class="search-form">
+          <input type="text" placeholder="Search a product" />
           <button>
             <i class="bi bi-search"></i>
           </button>
         </form>
         <div class="search-results">
-          <h3 class="search-heading">RESULTS FROM PRODUCT</h3>
+          <div class="search-heading">
+            <h3>RESULTS FROM PRODUCT</h3>
+          </div>
           <div class="results">
-            <a href="" class="result-item">
+            <a href="#" class="result-item">
               <img
-                src="/img/products/product1/1.png"
+                src="img/products/product1/1.png"
                 class="search-thumb"
                 alt=""
               />
@@ -229,9 +239,9 @@
                 <span class="search-price">$108.00</span>
               </div>
             </a>
-            <a href="" class="result-item">
+            <a href="#" class="result-item">
               <img
-                src="/img/products/product2/1.png"
+                src="img/products/product2/1.png"
                 class="search-thumb"
                 alt=""
               />
@@ -243,27 +253,61 @@
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle close"></i>
+        <i class="bi bi-x-circle" id="close-search"></i>
       </div>
     </div>
-    <!--! Modal Search end -->
+    <!--! modal search end  -->
 
+    <!--! modal dialog start  -->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="modal-close">
+          <i class="bi bi-x"></i>
+        </button>
+        <div class="modal-image">
+          <img src="img/modal-dialog.jpg" alt="" />
+        </div>
+        <div class="popup-wrapper">
+          <div class="popup-content">
+            <div class="popup-title">
+              <h3>NEWSLETTER</h3>
+            </div>
+            <p class="popup-text">
+              Sign up to our newsletter and get exclusive deals you won find any
+              where else straight to your inbox!
+            </p>
+            <form class="popup-form">
+              <input type="text" placeholder="Enter Email Address Here" />
+              <button class="btn btn-primary">SUBSCRIBE</button>
+              <label>
+                <input type="checkbox" />
+                <span>Don't show this popup again</span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! modal dialog end  -->
+
+    <!--! account start  -->
     <section class="account-page">
       <div class="container">
         <div class="account-wrapper">
           <div class="account-column">
             <h2>Login</h2>
-            <form action="">
+            <form>
               <div>
-                <label for="">
-                  <span>
-                    Username or email address <span class="required">*</span>
-                  </span>
-                  <input type="email" />
+                <label>
+                  <span
+                    >Username or email address
+                    <span class="required">*</span></span
+                  >
+                  <input type="text" />
                 </label>
               </div>
               <div>
-                <label for="">
+                <label>
                   <span>Password <span class="required">*</span></span>
                   <input type="password" />
                 </label>
@@ -275,27 +319,26 @@
                 </label>
                 <button class="btn btn-sm">Login</button>
               </p>
-
-              <a href="" class="form-link">Lost your password?</a>
+              <a href="#" class="form-link">Lost your password?</a>
             </form>
           </div>
           <div class="account-column">
             <h2>Register</h2>
-            <form action="">
+            <form>
               <div>
-                <label for="">
-                  <span> Username <span class="required">*</span></span>
+                <label>
+                  <span>Username <span class="required">*</span></span>
                   <input type="text" />
                 </label>
               </div>
               <div>
-                <label for="">
-                  <span> Email address <span class="required">*</span></span>
+                <label>
+                  <span>Email address <span class="required">*</span></span>
                   <input type="email" />
                 </label>
               </div>
               <div>
-                <label for="">
+                <label>
                   <span>Password <span class="required">*</span></span>
                   <input type="password" />
                 </label>
@@ -314,6 +357,7 @@
         </div>
       </div>
     </section>
+    <!--! account end  -->
 
     <!--! policy start  -->
     <section class="policy">
@@ -352,49 +396,54 @@
     </section>
     <!--! policy end  -->
 
-    <!--! Footer start  -->
-    <section class="footer">
+    <!--! footer start  -->
+    <footer class="footer">
       <div class="subscribe-row">
         <div class="container">
           <div class="footer-row-wrapper">
-            <div class="subscribe-row-wrapper">
-              <div class="subscribe-row-top">
-                <h3 class="subscribe-title">
-                  Get our emails for info on new items,sales and more.
-                </h3>
-                <p class="subscribe-desc">
-                  We'll email you a voucher worth $10 off your first order over
-                  $50.
-                </p>
-              </div>
-              <div class="subscribe-row-bottom">
-                <form>
-                  <input type="text" placeholder="Enter your email address." />
-                  <button class="btn">Subscribe</button>
-                </form>
-                <p class="privacy-text">
-                  By subscribing you agree to our
-                  <a href="#"
-                    >Terms & Conditions and Privacy & Cookies Policy.</a
-                  >
-                </p>
+            <div class="footer-subscribe-wrapper">
+              <div class="footer-subscribe">
+                <div class="footer-subscribe-top">
+                  <h3 class="subscribe-title">
+                    Get our emails for info on new items, sales and more.
+                  </h3>
+                  <p class="subscribe-desc">
+                    We'll email you a voucher worth $10 off your first order
+                    over $50.
+                  </p>
+                </div>
+                <div class="footer-subscribe-bottom">
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="Enter your email address."
+                    />
+                    <button class="btn">Subscribe</button>
+                  </form>
+                  <p class="privacy-text">
+                    By subscribing you agree to our
+                    <a href="#"
+                      >Terms & Conditions and Privacy & Cookies Policy.</a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
             <div class="footer-contact-wrapper">
               <div class="footer-contact-top">
                 <h3 class="contact-title">
                   Need help? <br />
-                  (+90) 123 456 78 90
+                  (+94) 12 456 78 90
                 </h3>
                 <p class="contact-desc">We are available 8:00am – 7:00pm</p>
               </div>
               <div class="footer-contact-bottom">
                 <div class="download-app">
-                  <a href="">
-                    <img src="/img/footer/app-store.png" alt="" />
+                  <a href="#">
+                    <img src="img/footer/app-store.png" alt="" />
                   </a>
-                  <a href="">
-                    <img src="/img/footer/google-play.png" alt="" />
+                  <a href="#">
+                    <img src="img/footer/google-play.png" alt="" />
                   </a>
                 </div>
                 <p class="privacy-text">
@@ -411,7 +460,7 @@
           <div class="footer-widgets">
             <div class="brand-info">
               <div class="footer-logo">
-                <a href="" class="logo">LOGO</a>
+                <a href="index.html" class="logo">LOGO</a>
               </div>
               <div class="footer-desc">
                 <p>
@@ -426,87 +475,85 @@
                 </p>
               </div>
             </div>
-            <div class="widget-nav-menu-wrapper">
-              <div class="widget-nav-menu">
-                <h4>Information</h4>
-                <ul class="menu-list">
-                  <li>
-                    <a href="#">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Returns Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Shipping Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Dropshipping</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="widget-nav-menu">
-                <h4>Account</h4>
-                <ul class="menu-list">
-                  <li>
-                    <a href="#">Dashboard</a>
-                  </li>
-                  <li>
-                    <a href="#">My Orders</a>
-                  </li>
-                  <li>
-                    <a href="#">My Wishlist</a>
-                  </li>
-                  <li>
-                    <a href="#">Account details</a>
-                  </li>
-                  <li>
-                    <a href="#">Track My Orders</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="widget-nav-menu">
-                <h4>Shop</h4>
-                <ul class="menu-list">
-                  <li>
-                    <a href="#">Affiliate</a>
-                  </li>
-                  <li>
-                    <a href="#">Bestsellers</a>
-                  </li>
-                  <li>
-                    <a href="#">Discount</a>
-                  </li>
-                  <li>
-                    <a href="#">Latest Products</a>
-                  </li>
-                  <li>
-                    <a href="#">Sale Products</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="widget-nav-menu">
-                <h4>Categories</h4>
-                <ul class="menu-list">
-                  <li>
-                    <a href="#">Women</a>
-                  </li>
-                  <li>
-                    <a href="#">Men</a>
-                  </li>
-                  <li>
-                    <a href="#">Bags</a>
-                  </li>
-                  <li>
-                    <a href="#">Outerwear</a>
-                  </li>
-                  <li>
-                    <a href="#">Shoes</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="widget-nav-menu">
+              <h4>Information</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Returns Policy</a>
+                </li>
+                <li>
+                  <a href="#">Shipping Policy</a>
+                </li>
+                <li>
+                  <a href="#">Dropshipping</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Account</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#">My Orders</a>
+                </li>
+                <li>
+                  <a href="#">My Wishlist</a>
+                </li>
+                <li>
+                  <a href="#">Account details</a>
+                </li>
+                <li>
+                  <a href="#">Track My Orders</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Shop</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Affiliate</a>
+                </li>
+                <li>
+                  <a href="#">Bestsellers</a>
+                </li>
+                <li>
+                  <a href="#">Discount</a>
+                </li>
+                <li>
+                  <a href="#">Latest Products</a>
+                </li>
+                <li>
+                  <a href="#">Sale Products</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Categories</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Women</a>
+                </li>
+                <li>
+                  <a href="#">Men</a>
+                </li>
+                <li>
+                  <a href="#">Bags</a>
+                </li>
+                <li>
+                  <a href="#">Outerwear</a>
+                </li>
+                <li>
+                  <a href="#">Shoes</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -516,11 +563,10 @@
           <div class="footer-copyright">
             <div class="site-copyright">
               <p>
-                Copyright 2022 © E-Commerce Theme. All right reserved. Powered
-                by Namida Yolchuyeva.
+                Copyright 2023 © E-Commerce Theme. All right reserved. Powered
+                by Namida Yolchuyeva .
               </p>
             </div>
-
             <a href="#">
               <img src="img/footer/cards.png" alt="" />
             </a>
@@ -540,10 +586,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
+    <!--! footer end  -->
 
-    <!--! Footer end  -->
-
-    <script src="/js/main.js"></script>
+    <!-- javascript  -->
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

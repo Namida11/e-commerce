@@ -1,47 +1,41 @@
-
-
-//!Slider start
+//! slider start
 let slideIndex = 1;
-
-showSlides(slideIndex)
+showSlides(slideIndex);
 
 setInterval(() => {
-    showSlides(slideIndex += 1)
-}, 4000)
+  showSlides((slideIndex += 1));
+}, 4000);
 
-function controlSlide(n) {
-    showSlides(slideIndex += n);
-
+function plusSlide(n) {
+  showSlides((slideIndex += n));
 }
+
 function currentSlide(n) {
-    showSlides(slideIndex = n)
+  showSlides((slideIndex = n));
 }
 
-function showSlides(a) {
-    let slides = document.getElementsByClassName("slider-item");
-    const dots = document.getElementsByClassName("slider-dot");
+function showSlides(n) {
+  const slides = document.getElementsByClassName("slider-item");
+  const dots = document.getElementsByClassName("slider-dot");
 
-    if (a > slides.length) {
-        slideIndex = 1
-    }
-    if (a < 1) {
-        slideIndex = slides.length
-    }
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
 
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
 
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "flex"
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
 
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].classList.remove("active")
-    }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
 
-    dots[slideIndex - 1].classList.add("active")
-
+  slides[slideIndex - 1].style.display = "flex";
+  dots[slideIndex - 1].className += " active";
 }
 
-
-//!Slider end
-
+//! slider end

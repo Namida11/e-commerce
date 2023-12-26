@@ -1,17 +1,20 @@
- function tabsFunc(){
-    const btnTab=document.querySelectorAll(".tab-button")
-    const tabPanels=document.querySelectorAll(".tab-panel")
-    const tabWrapper= document.querySelector(".tab-list")
-    tabWrapper.addEventListener("click",(e)=>{
-        e.preventDefault()
-        const id = e.target.dataset.id
-        if(id){
-            btnTab.forEach((button)=>button.classList.remove("active"))
-            e.target.classList.add("active")
-            tabPanels.forEach((panel)=>panel.classList.remove("active"))
-            const element=document.getElementById(id)
-            element.classList.add("active")
-        }
-    })
+function tabsFunc() {
+  const btnTab = document.querySelectorAll(".tab-button");
+  const contentDOM = document.querySelectorAll(".content");
+  const tabsButtons = document.querySelector(".tab-list");
+
+  tabsButtons.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = e.target.dataset.id;
+    if (id) {
+      btnTab.forEach((button) => button.classList.remove("active"));
+      e.target.classList.add("active");
+      contentDOM.forEach((content) => content.classList.remove("active"));
+      console.log(id);
+      const element = document.getElementById(id);
+      element.classList.add("active");
+    }
+  });
 }
-export default tabsFunc()
+
+export default tabsFunc();

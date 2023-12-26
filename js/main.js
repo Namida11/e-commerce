@@ -1,39 +1,24 @@
-import Header from "./header.js";
-import product from "./products.js";
-import searchFunct from "./search.js";
+import headerFunc from "./header.js";
+import productsFunc from "./products.js";
+import searchFunc from "./search.js";
 
-//!Products localstore start
-
+//! add product to localStorage start
 (async function () {
-    const photos = await fetch("../js/data.json");
-    const data = await photos.json()
+  const photos = await fetch("../js/data.json");
+  const data = await photos.json();
 
-    data ? localStorage.setItem("products", JSON.stringify(data)) : [] //stringe ceviriir
+  data ? localStorage.setItem("products", JSON.stringify(data)) : [];
+  productsFunc(data);
+  searchFunc(data);
+})();
+//! add product to localStorage end
 
-    product()
-    searchFunct(data)
-})()
+//! add cartItems to localStorage start
+const cartItems = document.querySelector(".header-cart-count");
 
-//!Products localstore end
-
-//!cart localstore start
-
-
-const products =localStorage.getItem("products")
-
-  const cartCount=document.querySelector(".header-cart-count")
-
-  cartCount.innerHTML = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")).length : "0"
-//!Products localstore end
-
-
-
-
-
-
-
-
-
-
+cartItems.innerHTML = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart")).length
+  : "0";
+//! add cartItems to localStorage end
 
 

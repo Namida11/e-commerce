@@ -1,65 +1,66 @@
-function sidebarFunc (){
-    //!home sidebar start
-const btnOpenSidebar = document.querySelector("#btn-menu");
-const sidebar = document.querySelector("#sidebar");
-const btnCloseSidebar = document.querySelector("#sidebar-close");
+function sidebarFunc() {
+  //! home sidebar start
+  const btnOpenSidebar = document.querySelector("#btn-menu");
+  const sidebar = document.querySelector("#sidebar");
+  const btnCloseSidebar = document.querySelector("#close-sidebar");
+  btnOpenSidebar.addEventListener("click", function () {
+    sidebar.style.left = "0";
+  });
 
+  btnCloseSidebar.addEventListener("click", function () {
+    sidebar.style.left = "-100%";
+  });
 
-const open_mobile_menu = () => {
-    sidebar.style.top = "0"
-    sidebar.style.zIndex = "1"
-}
-const close_mobile_menu = () => {
-    sidebar.style.top = "-100%"
-}
-btnOpenSidebar.addEventListener("click", open_mobile_menu)
-btnCloseSidebar.addEventListener("click", close_mobile_menu)
-
-
-//clcik outside start
-
-document.addEventListener("click", function (e) {
-    if (!e.composedPath().includes(sidebar) && !e.composedPath().includes(btnOpenSidebar)) {
-        close_mobile_menu()
+  /* click outside start */
+  document.addEventListener("click", function (event) {
+    if (
+      !event.composedPath().includes(sidebar) &&
+      !event.composedPath().includes(btnOpenSidebar)
+    ) {
+      sidebar.style.left = "-100%";
     }
+  });
+  /* click outside end */
 
-})
-
-//clcik outside end
-//!home sidebar end
+  //! home sidebar end
 }
 
-function modalSearcFunc (){
-    //!Modal Search start
-const openSearchBtn = document.querySelector("#modal-search-btn");
-const modalSearch = document.querySelector(".modal-search");
-const closeSearchBtn = document.querySelector(".modal-wrapper .close");
-const modalWrapper = document.querySelector(".modal-wrapper");
+function searchModalFunc() {
+  //! search modal start
+  const btnOpenSearch = document.querySelector(".search-button");
+  const btnCloseSearch = document.getElementById("close-search");
+  const modalSearch = document.getElementsByClassName("modal-search");
+  const modalSearchWrapper = document.getElementsByClassName("modal-wrapper");
 
-const openModalSearch = () => {
-    modalSearch.style.visibility = "visible"
-    modalSearch.style.opacity = "1"
+  btnOpenSearch.addEventListener("click", function () {
+    modalSearch[0].style.visibility = "visible";
+    modalSearch[0].style.opacity = "1";
+  });
 
-}
-const closeModalSearch = () => {
-    modalSearch.style.visibility = "hidden"
-    modalSearch.style.opacity = "0"
-}
-openSearchBtn.addEventListener("click", openModalSearch)
-closeSearchBtn.addEventListener("click", closeModalSearch)
+  btnCloseSearch.addEventListener("click", function () {
+    modalSearch[0].style.visibility = "hidden";
+    modalSearch[0].style.opacity = "0";
+  });
 
-/*click outside start */
-document.addEventListener("click", function (e) {
-    if (!e.composedPath().includes(modalWrapper) && !e.composedPath().includes(openSearchBtn)) {
-        closeModalSearch()
+  /* click outside start */
+  document.addEventListener("click", function (e) {
+    if (
+      !e.composedPath().includes(modalSearchWrapper[0]) &&
+      !e.composedPath().includes(btnOpenSearch)
+    ) {
+      modalSearch[0].style.visibility = "hidden";
+      modalSearch[0].style.opacity = "0";
     }
-})
-/*click outside end */
-//!Modal Search end
+  });
+
+  /* click outside end */
+
+  //! search modal end
 }
 
- function headerFunc (){
-    sidebarFunc()
-    modalSearcFunc()
+function headerFunc() {
+  sidebarFunc();
+  searchModalFunc();
 }
+
 export default headerFunc();

@@ -14,19 +14,14 @@
                 "img/products/product1/2.png",
                 "img/products/product1/3.png"
             ]
-        },
-        "colors":[
-            "black",
-            "red",
-            "green"
-        ]
+        }
     },
     {
         "id": 2,
         "name": "Ridley High Waist",
         "price": {
             "oldPrice": 208.00,
-            "newPrice": 165.00
+            "newPrice": 100
         },
         "discount": 33,
         "img": {
@@ -36,13 +31,7 @@
                 "img/products/product2/2.png",
                 "img/products/product2/3.png"
             ]
-        },
-        "colors":[
-            "black",
-            "red",
-            "blue",
-            "green"
-        ]
+        }
     },
     {
         "id": 3,
@@ -59,12 +48,7 @@
                 "img/products/product3/2.png",
                 "img/products/product3/3.png"
             ]
-        },
-        "colors":[
-            "black",
-            "white",
-            "brown"
-        ]
+        }
     },
     {
         "id": 4,
@@ -81,14 +65,7 @@
                 "img/products/product4/2.png",
                 "img/products/product4/3.png"
             ]
-        },
-        "colors":[
-            "black",
-            "orange",
-            "blue",
-            "green",
-            "purple"
-        ]
+        }
     },
     {
         "id": 5,
@@ -105,14 +82,6 @@
                 "img/products/product5/2.png",
                 "img/products/product5/3.png"
             ]
-        },
-        "colorss":[
-            "black",
-            "orange",
-            "blue",
-            "green",
-            "purple",
-            "red"
-        ]
+        }
     }
 ]
